@@ -15,7 +15,7 @@
     <title>爱交互-郁先森的HOME</title>
     <meta name="Description" content="郁剑华（Justin),一个热爱生活，热爱前端，热爱交互设计的普通学生。不是每个人都能成为神，我们可以做凡人中平凡但不普通的那一个。期待一个平台，一个团体，实现自己的有趣的想法。" />
     <meta name="keywords" content="郁剑华,爱交互,aijiaohu,小闲的小鱼儿,Justin,yujianhua" />
-    <meta name="Author" contect="yujianhua，郁剑华" / >
+    <meta name="Author" contect="yujianhua，郁剑华" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="favicon.ico" />
@@ -23,7 +23,6 @@
     <!-- Le styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/buttons.css">
 
 	<!-- Load jQuery -->
@@ -43,9 +42,7 @@
       
       jQuery(function($){
         
-        $('.fade').mosaic();
-
-        
+        $('.fade').mosaic();   
         });
         
     </script> 
@@ -57,7 +54,9 @@
 	
 	<!-- Some CSS -->
 	<style type="text/css">
-	
+	.row-fluid [class*="span"]{
+		min-height: 0px;
+	}
      body {
         padding-top: 40px;
       }
@@ -106,7 +105,7 @@
        color: #fff;
        font-family: "微软雅黑";
      }
-     #btn{
+     #btn ,#btn1{
         display: block;
         width: 200px;
         text-decoration: none;
@@ -115,7 +114,6 @@
         margin-bottom: 60px;
         margin-top: 40px;
       }
-
      #portfolio{
       width: inherit;
       height: inherit;
@@ -136,8 +134,8 @@
      }
      .headline{
       font-size: 16px;
-      font-weight: bold;
       color: #373c42;
+      font-family: '微软雅黑';
      }
      .close-btn {
       cursor: pointer;
@@ -148,7 +146,14 @@
       text-align:center;
       display:none;
       font-size:12px;
-      line-height:17px;
+      line-height:24px;
+    }
+    .resp1{
+    	margin-top: 20px;
+    	margin-bottom: 20px;
+    }
+    .resp2{
+    	margin-bottom: 20px;
     }
     .btm{
       margin-bottom: 40px;
@@ -158,6 +163,11 @@
         background:#f2d183;
         width:inherit;
         height: auto;
+    }
+    .blog-link>p{
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
     .img-circle{
       border: 5px solid #fff;
@@ -176,10 +186,13 @@
       padding-right: 30px;
     }
     .details1 p{
+      display:block;
+      height:150px;
       padding-right: 30px;
       margin-top: 30px;
       font-family: '微软雅黑';
       color: #544b38;
+      overflow: hidden;
     }
     #photography{
       background:#0e0e0e;
@@ -220,7 +233,6 @@
       float:left;
       list-style: none;
       margin-top: 40px;
-      margin-left: 50px;
     }
     .focus{
       float:left;
@@ -296,6 +308,291 @@
          text-align: center;
          margin-bottom: 30px;
       }
+
+
+/* = 响应式 Responsive
+----------------------------------------------- */
+@media (min-width: 980px) and (max-width: 1280px){
+	 #top{
+	 	background: #ddd9d2;
+	 }
+	 #pic1{
+     	background: url(img/responsive-web-top-1024.png)  center no-repeat ;
+     	margin-top: -10px;
+     }
+     #flag{
+     	display: none;
+     }
+     #scroll-down{
+     text-align: center;
+     margin-top: 600px;
+     padding-top: 10px;
+   }
+   h3{
+		margin-top: -50px;
+		font-size: 20px;
+		margin-left: -30px;
+	}
+	p{
+		font-size: 14px;
+		margin-left: -30px;
+	}
+	#btn{
+   	width: 180px;
+   	margin-top: 10px;
+   	margin-left: -30px;
+   }
+   #skill{
+        background: url(img/responsive-skill.png) no-repeat;
+        margin-top: 10px;
+        margin-left: 10px;
+ 		background-size:100% 80%;
+ 		height: auto;
+      }
+       #chartdiv{
+   	   width:100%;height:450px;
+        margin-top: -20px;
+        margin-left: -10px;
+        margin-right: auto;
+   }
+   .content2 > p{
+   	font-size: 16px;
+   	line-height: 28px;
+   }
+   .details1 h4{
+   	font-size: 15px;
+   	height: 40px;
+   }
+   #btn1{
+   	width: 110px;
+   }
+   #contact h2{
+   	font-size: 26px;
+   }
+   .bef{
+   	margin-left: 0px;
+   }
+}
+@media (max-width: 979px) {
+	.navbar{
+		margin-top: -40px;
+	}
+	.top-nav{
+		margin-top: -5px;
+	}
+	.navbar-fixed-top{
+		margin-bottom: 12px;
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+     .navbar{
+     	margin-top: -40px;
+     }
+     #pic1{
+     	background-position-x: center;
+     	margin-top: -20px;
+     }
+     .row-fluid .offset2:first-child {
+	margin-left: 12%;
+	}
+	h3{
+		margin-top: -50px;
+		font-size: 16px;
+	}
+	p{
+		font-size: 14px;
+	}
+    #btn{
+   	width: 110px;
+   	margin-top: 0px;
+   }
+   #chartdiv{
+   	   width:100%;height:450px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: auto;
+   }
+   #skill{
+        background: url(img/responsive-skill.png) no-repeat;
+        margin-top: -10px;
+        margin-left: 10px;
+ 		background-size:contain;
+      }
+   #pho{
+   	margin-left: 80px;
+   }
+   .span3.content2{
+   	width: 42%;
+   	margin-left: -10px;
+   }
+   .content2 > p {
+   	font-size: 15px;
+   	margin-top: 35px;
+   }
+   .details1 h4{
+   	font-size: 15px;
+   	height: 40px;
+   }
+   #btn1{
+   	width: 110px;
+   }
+   #contact h2{
+   	font-size: 20px;
+   }
+   .bef{
+   	margin-left: 0px;
+   }
+}
+@media (max-width: 767px) {
+	body{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	h3{
+   	margin-top: -30px;
+   	font-size: 18px;
+   	text-align: center;
+   }
+   .content1>p{
+   	margin: 0px 40px;
+   }
+   #btn{
+   	width: 200px;
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+    #skill{
+        background: url(img/skill.png) no-repeat;
+        margin-top: 20px;
+        margin-left: 60px;
+      }
+    .navbar .nav-collapse .nav.pull-right {
+    margin-left: 20px;
+    }
+	.navbar .btn-navbar{
+		margin-right: 20px;
+	}
+	.brand>img{
+		margin-left: 18px;
+	}
+	.navbar-fixed-top{
+		margin-bottom: -10px;
+		margin-right: 0px;
+	}
+	.links{
+    text-align: center;
+   }
+   .bef{
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+}
+@media (max-width: 600px){
+	#top{
+		background: #ddd9d2;
+	}
+	#pic1{
+        background: url(img/responsive-web-top.png)  center no-repeat ;
+        height: 485px;
+      }
+    #flag{
+    	display: none;
+    }
+     #scroll-down{
+     text-align: center;
+     margin-top: 420px;
+     padding-top: 10px;
+   }
+   h3{
+   	margin-top: -30px;
+   	font-size: 16px;
+   	text-align: center;
+   }
+   p{
+   	font-size: 12px;
+   }
+   .navbar .nav-collapse .nav.pull-right {
+   margin-left: 20px;
+   }
+   .content1>p{
+   	margin: 0px 20px;
+   }
+   #btn{
+   	width: 120px;
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+   #skill{
+   	display: none;
+   }
+   .span10>p{
+   	margin: 0px 20px;
+   	font-size: 12px;
+   }
+   .blog-link>p{
+   	margin: 20px 20px 0px;
+   	font-size: 12px;
+   }
+   .mosaic-backdrop>img{
+   	margin-left:30px;
+   	 width: 80%;
+   	 height: 40%
+   }
+   #portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6>p{
+   	  margin: 0px 20px;
+   }
+   .content2>p{
+   	font-size: 14px;
+   	margin: 0px 20px 20px;
+   	line-height: 24px;
+   }
+   .img-circle{
+   	margin-left: 0px;
+   }
+   .details1 h4{
+   	margin-left: 24px;
+   	font-size: 14px;
+   }
+   .details1 p{
+   	margin-left: 24px;
+   	margin-top: 0px;
+   }
+   .details2{
+   	font-size: 12px;
+   	margin:10px 20px 0;
+   }
+   #btn1{
+   	margin-top: -30px;
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+   .intro{
+   	font-size: 13px;
+   	margin:15px 20px;
+   }
+   #contact h2{
+   	font-size: 16px;
+   	text-align: center;
+   	margin-top: 20px;
+   }
+   .links{
+    margin-left: 30px;
+   }
+   .bef{
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+   footer{
+   	margin-top: 8px;
+   }
+    .top-nav a:hover{
+          text-decoration: none;
+          -webkit-transform:translateY(0px);
+          -moz-transform:translateY(0px);
+          transform:translateY(0px);
+      }
+}
+
       /*scroll-bar伪类*/
       ::-webkit-scrollbar{width:10px;}
       ::-webkit-scrollbar-track{
@@ -309,7 +606,6 @@
         -webkit-box-shadow:inset 0 0 06px rgba(0,0,0,0.6);
       }
       ::-webkit-scrollbar-thumb:window-inactive{background: 0,0,0,.3};
-
 
 	</style>
 	
@@ -339,7 +635,7 @@
     <div class="container top-nav">
  
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <a type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -383,6 +679,7 @@
         <img src="img/scroll.gif">
       </div>
   </div>
+  </div>
 
 
 
@@ -398,7 +695,7 @@
            <p>人人控和站酷控，有想法和幽默感的行动派，丰富的团队合作经验，着手创立了学校第一个线上设计组织卡乐坊视觉设计。</p>
            <p>认为交互设计中的理念是方法论，前端开发和设计中的技能是创造优秀产品的手段，两者相辅相成，相互促进。</p>
             <div class="span4">
-              <a href="#" id="btn" class="button glow button-rounded button-flat-primary">Read More &rarr;</a>
+              <a href="aboutme.html"  target="_blank"id="btn" class="button glow button-rounded button-flat-primary">Read More &rarr;</a>
             </div>        
      </div>
       <div class="span7" id="skill">
@@ -417,7 +714,7 @@
              <img src="img/portfolio.png">
           </div>
           <div class="span10 offset1">
-            <p>从我两年多做的一些东西中，选出来一些有趣的东西，也许很多很简单，也有些参考，但是却代表了成长的脚步。在<a target="_blank"href="http://huaban.com/boards/2592746/">花瓣网</a>中还能看到我的别的作品。
+            <p>从我两年多做的一些东西中，选出来一些有趣的东西，也许很多很简单，也有些参考，但是却代表了成长的脚步。在<a target="_blank" href="http://huaban.com/boards/2592746/">花瓣网</a>中还能看到我的别的作品。
             </p>
           </div>
         </div>
@@ -425,10 +722,10 @@
         <div class="span3 offset2">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio1').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (1).png" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/1.png" alt="Portfolio" /></div>
               <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
+                 <div class="headline">中国梦，我的梦专题</div>
+                  Web Design, Interaction Design
               </div>
             </a>
           </div>
@@ -437,10 +734,10 @@
         <div class="span3">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio2').slideDown(); $('#portfolio1,#portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio2').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (2).png" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/2.png" alt="Portfolio" /></div>
               <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
+                 <div class="headline">微视频网站</div>
+                  Web Design, Interaction Design
               </div>
             </a>
           </div>
@@ -449,23 +746,22 @@
         <div class="span3">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio3').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (3).png" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/3.png" alt="Portfolio" /></div>
               <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
+                 <div class="headline">单色系猜想</div>
+                  Graphic Design，Flat-UI
               </div>
             </a>
           </div>
         </div>
        </div>
-      </div>
 
 
     <div class="row-fluid span11 btm">
         <div class="span3 offset2">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio4').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (4).png" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/2.png" alt="Portfolio" /></div>
               <div class="details">
                  <div class="headline">Yumo jump</div>
                   Game design, app design
@@ -477,7 +773,7 @@
         <div class="span3">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio5').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (5).png" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/1.png" alt="Portfolio" /></div>
               <div class="details">
                  <div class="headline">Yumo jump</div>
                   Game design, app design
@@ -489,7 +785,7 @@
         <div class="span3">
           <div class="portfolio_pic">
              <a onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio6').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/11 (6).jpg" alt="Portfolio" /></div>
+             <div class="mosaic-backdrop"><img src="img/portfolio/3.png" alt="Portfolio" /></div>
               <div class="details">
                  <div class="headline">Yumo jump</div>
                   Game design, app design
@@ -506,34 +802,36 @@
 
 <!--slideDownHidden-->
     <div class="row-fluid">
-     <div class="span4 offset4">
+     <div class="span6 offset3">
       <div id="portfolio1">
         <img src="img/close.png" onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (1).png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (1).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (1).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+         <h4>中国梦，我的梦</h4>
+    <p>设计思路：蓝天，白云的头部设计使得纵深感加强，同时更好的背景的白色衔接。头部的天空与底部的城市剪影呼应，绸带与中间Banner处绸带呼应，跳动的频率和心脏将中国梦和我的梦连接起来达到了需求方的要求。整体的色彩和间距，使页面显得较为简洁、清新。作为一个专题页面将需要表达的内容尽量直观的展示在用户面前，减少了用户多余的点击。<br/><a href="http://huaban.com/pins/64739208/zoom/"target="_blank">去花瓣看细节</a></p>
+    <img src="img/portfolio/11.jpg"       alt="Portfolio" class="resp1" /><br />
+    <img src="img/portfolio/13.jpg"   alt="Portfolio" class="resp2" /><br />
+    <img src="img/portfolio/11.jpg"   alt="Portfolio" class="resp2" />
       </div>
      </div>
-    <div class="span4 offset4">
+    <div class="span8 offset2">
       <div id="portfolio2">
         <img src="img/close.png" onclick="$('#portfolio2').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (2).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (2).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (2).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+         <h4>大学微视频网站</h4>
+<p>这是我做的这个微视频网站的第三版的部分页面，应领导和工程师要求部分内容参考有些网站。三次改版，每一次改动都让我对网页设计有新的理解，也许这就是成长吧。交互方面的内容不想多说什么，一个细节经常改动十几次。设计者最容易沉浸在自己的想法中忽视了技术可行性，也是因为这个网站，常常跟前端工程师沟通很久，后来索性自己开始学习前端开发，也许有的时候人确实需要一个动力。围绕这个网站的设计，我开始关注交互设计，也开始接触WEB前端，感受到了自己的成长。</p>
+    <img src="img/portfolio/22.png" alt="Portfolio" class="resp1"  /><br />
+    <img src="img/portfolio/23.png" alt="Portfolio" class="resp2" /><br />
+    <img src="img/portfolio/24.png" alt="Portfolio" class="resp2" />
       </div>
      </div>
      <div class="span4 offset4">
       <div id="portfolio3">
         <img src="img/close.png" onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (3).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (3).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (3).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+         <h4>单色系猜想</h4>
+    <p>设计思路：扁平化设计风格，可以让作者能把握物体更本质的东西。我的这些设计追求以最简洁的笔画来描绘事物，纯色系背景更加简洁清新，给用户一定想象的空间，没有明确的边框，让用户可以脑补出最完美的轮廓，增加用户想象时的乐趣。简单明快的表示，可以让所表现的事物尺寸较小的时候不会出现因为损失细节而降低效果。</p>
+    <img src="img/portfolio/imac.png"  alt="Portfolio" class="resp1" /><br />
+    <img src="img/portfolio/ipod-classic.png"  alt="Portfolio" class="resp2" /><br />
+    <img src="img/portfolio/camera.png"   alt="Portfolio" class="resp2" /><br />
+    <img src="img/portfolio/radio.png"  alt="Portfolio" class="resp2" /><br />
+    <img src="img/portfolio/watch.png"  alt="Portfolio" class="resp2" /><br />
       </div>
      </div>
      <div class="span4 offset4">
@@ -541,9 +839,9 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
         <img src="img/close.png" onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
          <h4>作品题目</h4>
 A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (4).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (4).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (4).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+    <img src="img/portfolio/41.png"  alt="Portfolio" class="resp1" /><br />
+    <img src="img/portfolio/41.png"  alt="Portfolio" class="resp2" /><br />
+    <img src="img/11 (4).png"   alt="Portfolio" class="resp2" />
       </div>
      </div>
      <div class="span4 offset4">
@@ -551,9 +849,9 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
         <img src="img/close.png" onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
          <h4>作品题目</h4>
 A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (5).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (5).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (5).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+    <img src="img/11 (5).png"  alt="Portfolio" class="resp1" /><br />
+    <img src="img/11 (5).png"  alt="Portfolio" class="resp2" /><br />
+    <img src="img/11 (5).png"   alt="Portfolio" class="resp2" />
       </div>
      </div>
      <div class="span4 offset4">
@@ -561,13 +859,14 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
         <img src="img/close.png" onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
          <h4>作品题目</h4>
 A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (2).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (2).png" style="padding-top:40px;" alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (2).png" style="padding-top:40px;"  alt="Portfolio" class="resp2" />
+    <img src="img/11 (2).png"  alt="Portfolio" class="resp1" /><br />
+    <img src="img/11 (2).png"  alt="Portfolio" class="resp2" /><br />
+    <img src="img/11 (2).png"   alt="Portfolio" class="resp2" />
       </div>
      </div>
 
     </div><!--row-fluid-->
+ </div><!--portfolio-->
 
 
 <div id="photography">
@@ -588,13 +887,13 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <a href="#" title="©AiJiaoHu.com"><img alt="photography" src="img/photo/22.jpg" /></a>
+            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/22.jpg" /></a>
           </div>
           <div class="item">
-            <a href="#" title="©AiJiaoHu.com"><img alt="photography" src="img/photo/33.jpg" /></a>
+            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/33.jpg" /></a>
           </div>
           <div class="item">
-            <a href="#" title="©AiJiaoHu.com"><img alt="photography" src="img/photo/11.jpg" /></a>
+            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/11.jpg" /></a>
           </div>
         </div> <a data-slide="prev" href="#carousel-792498" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-792498" class="right carousel-control">›</a>
       </div>
@@ -611,40 +910,47 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
 
 <div id="blog" class="container">
  <div class="row-fluid">
-  <div class="title">
-    <img src="img/blog.png">
-  </div>
+
+        <div class="span8 offset2">
+          <div class="title">
+             <img src="img/blog.png">
+          </div>
+          <div class="span10 offset1 blog-link">
+            <p>我习惯每天按照计划来生活，也曾一度习惯通过日记来总结一天的事情。记下有意义的，翻看过去能真切的感受到成长。同时我也会把有关自己从网上学到的东西放在这里，写上自己的心得，这不是一个技术博客，应该会很杂乱吧，不过这不也像生活么？欢迎到&nbsp&nbsp<a target="_blank" href="http://blog.aijiaohu.com/">我的博客</a>&nbsp&nbsp<em>blog.aijiaohu.com</em>来骚扰。
+            </p>
+          </div>
+        </div>
 
    <div class="featurette span11">
         <div class="span3 offset2">
      
-        <img class="img-circle" src="img/blog-1.png">
+        <img class="img-circle" src="img/blog-1.png" alt="blog" title="浅谈瀑布流造成的用户恐惧心理">
           <div class="details1">
               <h4>浅谈瀑布流造成的用户恐惧心理</h4>
         <p>
-        瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响。</p>
+        瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响，从一些用户的角度，看看我的理解...</p>
           </div>
-          <a href="http://blog.aijiaohu.com/?p=9" id="btn" class="button button-pill button-flat-highlight" target="_blank">Read More &rarr;</a>
+          <a href="http://blog.aijiaohu.com/?p=9" id="btn1" class="button button-pill button-flat-highlight" target="_blank">Read More &rarr;</a>
       </div>
       <div class="span3">
      
-        <img class="img-circle" src="img/blog-1.png">
+        <img class="img-circle" src="img/blog-2.png" alt="blog" title="让挑剔的你在意的Loading动画">
           <div class="details1">
-              <h4>浅谈瀑布流造成的用户恐惧心理</h4>
+              <h4>让挑剔的你在意的Loading动画</h4>
         <p>
-        瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响。</p>
+        好的设计是通过设计师不断对细微之处的完善而达到的让用户觉得自然并且被用户认可的行为模式。对于也许不起眼的Loading的动画，我总结了一些Loading动画的类型，以及自己的理解,那么我们不妨从改变一个小小的loading开始...</p>
           </div>
-         <a href="http://blog.aijiaohu.com/?p=17" id="btn" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a> 
+         <a href="http://blog.aijiaohu.com/?p=17" id="btn1" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a> 
       </div>
        <div class="span3">
      
-        <img class="img-circle" src="img/blog-1.png">
+        <img class="img-circle" src="img/blog-3.png" alt="blog" title="那一夏的青春">
           <div class="details1">
-              <h4>浅谈瀑布流造成的用户恐惧心理</h4>
+              <h4>那一夏的青春</h4>
         <p>
-        瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响。</p>
+        夏夜，华灯，青春站在街边的一角，彷徨在街边华美的橱窗，看着玻璃背后的精美，渴望而又羡慕，挪了挪脚步，不舍而又留恋，迟疑间，还是不经意的迈出了脚步，向未知走去，偶尔会回头望一眼，满目的温暖和回忆，但脚下却愈发...</p>
           </div>
-          <a href="#" id="btn" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a>
+          <a href="http://blog.aijiaohu.com/?p=32" id="btn1" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a>
       </div>
   </div>
 </div>
@@ -661,9 +967,9 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
        <p  class="intro">学习之路很漫长，同时我也希望能找到一个合适的公司作为未来事业的起点，<br/>如果对我做的感兴趣欢迎按下方的资料联系我。</p>
   </div>
   <div class="span3 offset2">
-     <h2>EMail:365260405@qq.com</h2>
+     <h2>EMail:&nbsp&nbspjob@aijiaohu.com</h2>
   </div>
-  <div class="span6 pull-right">
+  <div class="span5 offset1">
     <div class="links">
       <a href="http://www.renren.com/334750072" target="_blank"><div id="renren" class="focus" data-toggle="tooltip" title="人人网"><img src="img/renren.png"></div></a>
       <a href="http://www.zcool.com.cn/u/953616" target="_blank"><div id="zcool" class="focus" data-toggle="tooltip" title="站酷"><img src="img/zcool.png"></div></a>
@@ -672,7 +978,7 @@ A classic platform game with Yumo in the leading role. Follow Yumo the little fo
   </div>
  </div> 
    <div class="row-fluid">
-    <div class="span3 offset4 version1">
+    <div class="span3 offset4">
       <a href="index1.html" target="_blank"><div class="bef" alt="爱交互网站第一版"></div></a>
     </div>   
   </div>   
