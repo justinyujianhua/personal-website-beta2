@@ -2,7 +2,7 @@
       -     ------  |     |
      / \       |    |-----|
     -----      |    |     |    
-   /     \   \_/    |     |
+   /     \   \_/    |     |  本站采用响应式布局。
 -->
 <!DOCTYPE html>
 <!--[if lt IE 9]>
@@ -11,602 +11,155 @@
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html lang="zh-CN" manifest="cache.manifest">
  <head>
-    <meta charset="utf-8">
-    <title>爱交互-郁先森的HOME</title>
-    <meta name="Description" content="郁剑华（Justin),一个热爱生活，热爱前端，热爱交互设计的普通学生。不是每个人都能成为神，我们可以做凡人中平凡但不普通的那一个。期待一个平台，一个团体，实现自己的有趣的想法。" />
-    <meta name="keywords" content="郁剑华,爱交互,aijiaohu,小闲的小鱼儿,Justin,yujianhua" />
-    <meta name="Author" contect="yujianhua，郁剑华" />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" href="favicon.ico" />
-    <!-- Le styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/buttons.css">
-
-	<!-- Load jQuery -->
-	<script src="js/jquery.min.js"></script>
-	
-	<!-- Load ScrollTo -->
-	<script src="js/jquery.scrollTo-min.js"></script>
-	
-	<!-- Load LocalScroll -->
-	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
-  <!--Charts-->
-  <script src="js/chart.js"></script>
-
-  <!--Portfolio Slide Down-->
-  <script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
-  <script type="text/javascript">  
+<meta charset="utf-8">
+<title>
+  爱交互-郁先森的HOME
+</title>
+<meta name="Description" content="郁剑华（Justin),一个热爱生活，热爱前端，热爱交互设计的普通学生。不是每个人都能成为神，我们可以做凡人中平凡但不普通的那一个。期待一个平台，一个团体，实现自己的有趣的想法。"
+/>
+<meta name="keywords" content="郁剑华,爱交互,aijiaohu,小闲的小鱼儿,Justin,yujianhua"
+/>
+<meta name="Author" contect="yujianhua，郁剑华" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+/>
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" />
+<!-- Le styles -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/buttons.css">
+<!-- Load jQuery -->
+<script src="js/jquery.min.js">
+</script>
+<!-- Load ScrollTo -->
+<script src="js/jquery.scrollTo-min.js">
+</script>
+<!-- Load LocalScroll -->
+<script src="js/jquery.localscroll-1.2.7-min.js">
+</script>
+<!--Charts-->
+<script src="js/chart.js">
+</script>
+<!--Portfolio Slide Down-->
+<script type="text/javascript" src="js/mosaic.1.0.1.js">
+</script>
+<script type="text/javascript">
       
       jQuery(function($){
         
         $('.fade').mosaic();   
         });
         
-    </script> 
-
-  
-
-  
-
-	
-	<!-- Some CSS -->
-	<style type="text/css">
-	.row-fluid [class*="span"]{
-		min-height: 0px;
-	}
-     body {
-        padding-top: 40px;
-      }
-      p{
-        text-indent: 2em;
-        line-height: 1.8em;
-      }
-     #pic1{
-        background: url(img/web-top2.jpg);
-        height: 670px;
-      }
-      #flag{
-        text-align: center;
-      }
-      #scroll-down{
-        text-align: center;
-        margin-top: 375px;
-        padding-top: 10px;
-      }
-      #scroll-down h5{
-        margin-bottom: -5px; 
-        color: #803b2d;
-      }
-      #about {
-        width: inherit;
-        background: #373c42;
-      }
-      .title{
-        text-align: center;
-        margin-top: 60px;
-
-      }
-      #skill{
-        background: url(img/skill.png) no-repeat;
-        height: 509px;
-        margin-top: 20px;
-      }
-      #chartdiv{
-        width:95%;height:450px;
-        margin-top: 20px;
-        margin-left: -60px;
-        margin-right: auto;
-      }
-     .content1{
-       margin-top: 50px;
-       color: #fff;
-       font-family: "微软雅黑";
-     }
-     #btn ,#btn1{
-        display: block;
-        width: 200px;
-        text-decoration: none;
-        font-size:16px;
-        font-weight: bold;
-        margin-bottom: 60px;
-        margin-top: 40px;
-      }
-     #portfolio{
-      width: inherit;
-      height: inherit;
-      background: #fff;
-     }
-     #portfolio p{
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 50px;
-     }
-     .portfolio_pic a{
-      cursor:pointer;
-     }
-     .details{
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-     }
-     .headline{
-      font-size: 16px;
-      color: #373c42;
-      font-family: '微软雅黑';
-     }
-     .close-btn {
-      cursor: pointer;
-      margin-top:70px;
-      margin-bottom:40px;
-    }
-    #portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6{
-      text-align:center;
-      display:none;
-      font-size:12px;
-      line-height:24px;
-    }
-    .resp1{
-    	margin-top: 20px;
-    	margin-bottom: 20px;
-    }
-    .resp2{
-    	margin-bottom: 20px;
-    }
-    .btm{
-      margin-bottom: 40px;
-    }
-
-    #blog{
-        background:#f2d183;
-        width:inherit;
-        height: auto;
-    }
-    .blog-link>p{
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-    .img-circle{
-      border: 5px solid #fff;
-      margin-left: -40px;
-    }
-    .featurette{
-      margin-top: 50px;
-      text-align: center;
-    }
-    .details1{
-      margin-top: 30px;
-    }
-    .details1 h4{
-      font-family: '微软雅黑';
-      color: #2a2928;
-      padding-right: 30px;
-    }
-    .details1 p{
-      display:block;
-      height:150px;
-      padding-right: 30px;
-      margin-top: 30px;
-      font-family: '微软雅黑';
-      color: #544b38;
-      overflow: hidden;
-    }
-    #photography{
-      background:#0e0e0e;
-      width:inherit;
-      height: auto;
-    }
-    #pho{
-      margin-top: 50px;
-      margin-bottom: 30px;
-      border: 5px solid #fff;
-      border-radius: 10px;
-    }
-   .item img:hover{
-     -webkit-filter:sepia(0.5);
-    }
-    #carousel-792498{
-       margin-bottom: 0px;
-    }
-    .content2>p {
-      line-height: 50px;
-      font-size: 18px;
-      color: #fff;
-      font-family: '微软雅黑';
-      margin-top: 100px;
-      margin-left: 30px;
-    }
-
-    #contact{
-      background:#31ab96;
-      width:inherit;
-      height:inherit;
-    }
-    #contact h2{
-    color: #fff;
-    margin-top: 45px;
-    }
-    .links{
-      float:left;
-      list-style: none;
-      margin-top: 40px;
-    }
-    .focus{
-      float:left;
-      margin-left: 30px;
-    }
-    .focus img{
-      width: 50px;
-      height: 50px;
-    }
-    .renren{
-      background: url('img/logo.png') no-repeat -6px -30px;
-      width: 100px;
-      height: 99px;
-    }
-    .zcool{
-     background: url('img/logo.png') no-repeat -225px -29px;
-      width: 100px;
-      height: 100px;
-    }
-    .github{
-     background: url('img/logo.png') no-repeat -111px -28px;
-    width: 100px;
-    height: 100px;
-    }
-    .intro{
-       margin-top: 25px;
-       font-size: 16px;
-       color: #fff;
-       text-align: center;
-       font-family: '微软雅黑';
-    }
-    .details2{
-      color: #fff;
-      font-size: 14px;
-      text-align: center;
-      margin-top: 45px;
-    }
-    .bef{
-      margin-top: 20px;
-      margin-left: 80px;
-      text-align: center;
-      margin-bottom: 30px;
-      background: url('img/version1.png') no-repeat 0 -4px;
-      width: 274px;
-      height: 163px;
-    }
-    .bef:hover{
-      background: url('img/version1.png') no-repeat -296px -4px;
-      width: 274px;
-      height: 163px;
-    }
-      /* Image style */
-      #scrollUp {
-        bottom: 20px;
-        right: 20px;
-        height: 38px;  /* Height of image */
-        width: 38px; /* Width of image */
-        background: url(img/top.png) no-repeat;
-      }
-      .top-nav a{
-        -webkit-transition:400ms;
-        -moz-transition:400ms;
-        transition:400ms;
-      }
-      .top-nav a:hover{
-          text-decoration: none;
-          -webkit-transform:translateY(-5px);
-          -moz-transform:translateY(-5px);
-          transform:translateY(-5px);
-      }
-      footer{
-         margin-top: 50px;
-         text-align: center;
-         margin-bottom: 30px;
-      }
-
-
-/* = 响应式 Responsive
------------------------------------------------ */
-@media (min-width: 980px) and (max-width: 1280px){
-	 #top{
-	 	background: #ddd9d2;
-	 }
-	 #pic1{
-     	background: url(img/responsive-web-top-1024.png)  center no-repeat ;
-     	margin-top: -10px;
-     }
-     #flag{
-     	display: none;
-     }
-     #scroll-down{
-     text-align: center;
-     margin-top: 600px;
-     padding-top: 10px;
-   }
-   h3{
-		margin-top: -50px;
-		font-size: 20px;
-		margin-left: -30px;
-	}
-	p{
-		font-size: 14px;
-		margin-left: -30px;
-	}
-	#btn{
-   	width: 180px;
-   	margin-top: 10px;
-   	margin-left: -30px;
-   }
-   #skill{
-        background: url(img/responsive-skill.png) no-repeat;
-        margin-top: 10px;
-        margin-left: 10px;
- 		background-size:100% 80%;
- 		height: auto;
-      }
-       #chartdiv{
-   	   width:100%;height:450px;
-        margin-top: -20px;
-        margin-left: -10px;
-        margin-right: auto;
-   }
-   .content2 > p{
-   	font-size: 16px;
-   	line-height: 28px;
-   }
-   .details1 h4{
-   	font-size: 15px;
-   	height: 40px;
-   }
-   #btn1{
-   	width: 110px;
-   }
-   #contact h2{
-   	font-size: 26px;
-   }
-   .bef{
-   	margin-left: 0px;
-   }
-}
-@media (max-width: 979px) {
-	.navbar{
-		margin-top: -40px;
-	}
-	.top-nav{
-		margin-top: -5px;
-	}
-	.navbar-fixed-top{
-		margin-bottom: 12px;
-	}
-}
-@media (min-width: 768px) and (max-width: 979px) {
-     .navbar{
-     	margin-top: -40px;
-     }
-     #pic1{
-     	background-position-x: center;
-     	margin-top: -20px;
-     }
-     .row-fluid .offset2:first-child {
-	margin-left: 12%;
-	}
-	h3{
-		margin-top: -50px;
-		font-size: 16px;
-	}
-	p{
-		font-size: 14px;
-	}
-    #btn{
-   	width: 110px;
-   	margin-top: 0px;
-   }
-   #chartdiv{
-   	   width:100%;height:450px;
-        margin-top: 20px;
-        margin-left: 0px;
-        margin-right: auto;
-   }
-   #skill{
-        background: url(img/responsive-skill.png) no-repeat;
-        margin-top: -10px;
-        margin-left: 10px;
- 		background-size:contain;
-      }
-   #pho{
-   	margin-left: 80px;
-   }
-   .span3.content2{
-   	width: 42%;
-   	margin-left: -10px;
-   }
-   .content2 > p {
-   	font-size: 15px;
-   	margin-top: 35px;
-   }
-   .details1 h4{
-   	font-size: 15px;
-   	height: 40px;
-   }
-   #btn1{
-   	width: 110px;
-   }
-   #contact h2{
-   	font-size: 20px;
-   }
-   .bef{
-   	margin-left: 0px;
-   }
-}
-@media (max-width: 767px) {
-	body{
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	h3{
-   	margin-top: -30px;
-   	font-size: 18px;
-   	text-align: center;
-   }
-   .content1>p{
-   	margin: 0px 40px;
-   }
-   #btn{
-   	width: 200px;
-   	margin-left: auto;
-   	margin-right: auto;
-   }
-    #skill{
-        background: url(img/skill.png) no-repeat;
-        margin-top: 20px;
-        margin-left: 60px;
-      }
-    .navbar .nav-collapse .nav.pull-right {
-    margin-left: 20px;
-    }
-	.navbar .btn-navbar{
-		margin-right: 20px;
-	}
-	.brand>img{
-		margin-left: 18px;
-	}
-	.navbar-fixed-top{
-		margin-bottom: -10px;
-		margin-right: 0px;
-	}
-	.links{
-    text-align: center;
-   }
-   .bef{
-   	margin-left: auto;
-   	margin-right: auto;
-   }
-}
-@media (max-width: 600px){
-	#top{
-		background: #ddd9d2;
-	}
-	#pic1{
-        background: url(img/responsive-web-top.png)  center no-repeat ;
-        height: 485px;
-      }
-    #flag{
-    	display: none;
-    }
-     #scroll-down{
-     text-align: center;
-     margin-top: 420px;
-     padding-top: 10px;
-   }
-   h3{
-   	margin-top: -30px;
-   	font-size: 16px;
-   	text-align: center;
-   }
-   p{
-   	font-size: 12px;
-   }
-   .navbar .nav-collapse .nav.pull-right {
-   margin-left: 20px;
-   }
-   .content1>p{
-   	margin: 0px 20px;
-   }
-   #btn{
-   	width: 120px;
-   	margin-left: auto;
-   	margin-right: auto;
-   }
-   #skill{
-   	display: none;
-   }
-   .span10>p{
-   	margin: 0px 20px;
-   	font-size: 12px;
-   }
-   .blog-link>p{
-   	margin: 20px 20px 0px;
-   	font-size: 12px;
-   }
-   .mosaic-backdrop>img{
-   	margin-left:30px;
-   	 width: 80%;
-   	 height: 40%
-   }
-   #portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6>p{
-   	  margin: 0px 20px;
-   }
-   .content2>p{
-   	font-size: 14px;
-   	margin: 0px 20px 20px;
-   	line-height: 24px;
-   }
-   .img-circle{
-   	margin-left: 0px;
-   }
-   .details1 h4{
-   	margin-left: 24px;
-   	font-size: 14px;
-   }
-   .details1 p{
-   	margin-left: 24px;
-   	margin-top: 0px;
-   }
-   .details2{
-   	font-size: 12px;
-   	margin:10px 20px 0;
-   }
-   #btn1{
-   	margin-top: -30px;
-   	margin-left: auto;
-   	margin-right: auto;
-   }
-   .intro{
-   	font-size: 13px;
-   	margin:15px 20px;
-   }
-   #contact h2{
-   	font-size: 16px;
-   	text-align: center;
-   	margin-top: 20px;
-   }
-   .links{
-    margin-left: 30px;
-   }
-   .bef{
-   	margin-left: auto;
-   	margin-right: auto;
-   }
-   footer{
-   	margin-top: 8px;
-   }
-    .top-nav a:hover{
-          text-decoration: none;
-          -webkit-transform:translateY(0px);
-          -moz-transform:translateY(0px);
-          transform:translateY(0px);
-      }
-}
-
-      /*scroll-bar伪类*/
-      ::-webkit-scrollbar{width:10px;}
-      ::-webkit-scrollbar-track{
-        -webkit-box-shadow:inset 0 0 10px rgba(0,0,0,0.8);
-        
-      }
-      ::-webkit-scrollbar-thumb{
-        -webkit-border-radius:4px;
-        border-radius:4px;
-        background: rgba(0,0,0,0.3);
-        -webkit-box-shadow:inset 0 0 06px rgba(0,0,0,0.6);
-      }
-      ::-webkit-scrollbar-thumb:window-inactive{background: 0,0,0,.3};
-
+</script> 
+<!-- Some CSS -->
+<style type="text/css">
+  .row-fluid [class*="span"]{ min-height: 0px; } body { padding-top: 40px;
+  } p{ text-indent: 2em; line-height: 1.8em; } #pic1{ background: url(img/web-top2.jpg);
+  height: 670px; } #flag{ text-align: center; } #scroll-down{ text-align:
+  center; margin-top: 375px; padding-top: 10px; } #scroll-down h5{ margin-bottom:
+  -5px; color: #803b2d; } #about { width: inherit; background: #373c42; }
+  .title{ text-align: center; margin-top: 60px; } #skill{ background: url(img/skill.png)
+  no-repeat; height: 509px; margin-top: 20px; } #chartdiv{ width:95%;height:450px;
+  margin-top: 20px; margin-left: -60px; margin-right: auto; } .content1{
+  margin-top: 50px; color: #fff; font-family: "微软雅黑"; } #btn ,#btn1{ display:
+  block; width: 200px; text-decoration: none; font-size:16px; font-weight:
+  bold; margin-bottom: 60px; margin-top: 40px; } #portfolio{ width: inherit;
+  height: inherit; background: #fff; } #portfolio p{ text-align: center;
+  margin-top: 40px; margin-bottom: 50px; } .portfolio_pic a{ cursor:pointer;
+  } .details{ margin-top: 30px; margin-bottom: 30px; text-align: center;
+  } .headline{ font-size: 16px; color: #373c42; font-family: '微软雅黑'; } .close-btn
+  { cursor: pointer; margin-top:70px; margin-bottom:40px; } #portfolio1,
+  #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6{ text-align:center;
+  display:none; font-size:12px; line-height:24px; } .resp1{ margin-top: 20px;
+  margin-bottom: 20px; } .resp2{ margin-bottom: 20px; } .btm{ margin-bottom:
+  40px; } #blog{ background:#f2d183; width:inherit; height: auto; } .blog-link>p{
+  text-align: center; margin-top: 40px; margin-bottom: 20px; } .img-circle{
+  border: 5px solid #fff; margin-left: -40px; } .featurette{ margin-top:
+  50px; text-align: center; } .details1{ margin-top: 30px; } .details1 h4{
+  font-family: '微软雅黑'; color: #2a2928; padding-right: 30px; } .details1 p{
+  display:block; height:150px; padding-right: 30px; margin-top: 30px; font-family:
+  '微软雅黑'; color: #544b38; overflow: hidden; } #photography{ background:#0e0e0e;
+  width:inherit; height: auto; } #pho{ margin-top: 50px; margin-bottom: 30px;
+  border: 5px solid #fff; border-radius: 10px; } .item img:hover{ -webkit-filter:sepia(0.5);
+  } #carousel-792498{ margin-bottom: 0px; } .content2>p { line-height: 50px;
+  font-size: 18px; color: #fff; font-family: '微软雅黑'; margin-top: 100px; margin-left:
+  30px; } #contact{ background:#31ab96; width:inherit; height:inherit; }
+  #contact h2{ color: #fff; margin-top: 45px; } .links{ float:left; list-style:
+  none; margin-top: 40px; } .focus{ float:left; margin-left: 30px; } .focus
+  img{ width: 50px; height: 50px; } .renren{ background: url('img/logo.png')
+  no-repeat -6px -30px; width: 100px; height: 99px; } .zcool{ background:
+  url('img/logo.png') no-repeat -225px -29px; width: 100px; height: 100px;
+  } .github{ background: url('img/logo.png') no-repeat -111px -28px; width:
+  100px; height: 100px; } .intro{ margin-top: 25px; font-size: 16px; color:
+  #fff; text-align: center; font-family: '微软雅黑'; } .details2{ color: #fff;
+  font-size: 14px; text-align: center; margin-top: 45px; } .bef{ margin-top:
+  20px; margin-left: 80px; text-align: center; margin-bottom: 30px; background:
+  url('img/version1.png') no-repeat 0 -4px; width: 274px; height: 163px;
+  } .bef:hover{ background: url('img/version1.png') no-repeat -296px -4px;
+  width: 274px; height: 163px; } /* Image style */ #scrollUp { bottom: 20px;
+  right: 20px; height: 38px; /* Height of image */ width: 38px; /* Width
+  of image */ background: url(img/top.png) no-repeat; } .top-nav a{ -webkit-transition:400ms;
+  -moz-transition:400ms; transition:400ms; } .top-nav a:hover{ text-decoration:
+  none; -webkit-transform:translateY(-5px); -moz-transform:translateY(-5px);
+  transform:translateY(-5px); } footer{ margin-top: 50px; text-align: center;
+  margin-bottom: 30px; } /* = 响应式 Responsive -----------------------------------------------
+  */ @media (min-width: 980px) and (max-width: 1280px){ #top{ background:
+  #ddd9d2; } #pic1{ background: url(img/responsive-web-top-1024.png) center
+  no-repeat ; margin-top: -10px; } #flag{ display: none; } #scroll-down{
+  text-align: center; margin-top: 600px; padding-top: 10px; } h3{ margin-top:
+  -50px; font-size: 20px; margin-left: -30px; } p{ font-size: 14px; margin-left:
+  -30px; } #btn{ width: 180px; margin-top: 10px; margin-left: -30px; } #skill{
+  background: url(img/responsive-skill.png) no-repeat; margin-top: 10px;
+  margin-left: 10px; background-size:100% 80%; height: auto; } #chartdiv{
+  width:100%;height:450px; margin-top: -20px; margin-left: -10px; margin-right:
+  auto; } .content2 > p{ font-size: 16px; line-height: 28px; } .details1
+  h4{ font-size: 15px; height: 40px; } #btn1{ width: 110px; } #contact h2{
+  font-size: 26px; } .bef{ margin-left: 0px; } } @media (max-width: 979px)
+  { .navbar{ margin-top: -40px; } .top-nav{ margin-top: -5px; } .navbar-fixed-top{
+  margin-bottom: 12px; } } @media (min-width: 768px) and (max-width: 979px)
+  { .navbar{ margin-top: -40px; } #pic1{ background-position-x: center; margin-top:
+  -20px; } .row-fluid .offset2:first-child { margin-left: 12%; } h3{ margin-top:
+  -50px; font-size: 16px; } p{ font-size: 14px; } #btn{ width: 110px; margin-top:
+  0px; } #chartdiv{ width:100%;height:450px; margin-top: 20px; margin-left:
+  0px; margin-right: auto; } #skill{ background: url(img/responsive-skill.png)
+  no-repeat; margin-top: -10px; margin-left: 10px; background-size:contain;
+  } #pho{ margin-left: 80px; } .span3.content2{ width: 42%; margin-left:
+  -10px; } .content2 > p { font-size: 15px; margin-top: 35px; } .details1
+  h4{ font-size: 15px; height: 40px; } #btn1{ width: 110px; } #contact h2{
+  font-size: 20px; } .bef{ margin-left: 0px; } } @media (max-width: 767px)
+  { body{ padding-left: 0px; padding-right: 0px; } h3{ margin-top: -30px;
+  font-size: 18px; text-align: center; } .content1>p{ margin: 0px 40px; }
+  #btn{ width: 200px; margin-left: auto; margin-right: auto; } #skill{ background:
+  url(img/skill.png) no-repeat; margin-top: 20px; margin-left: 60px; } .navbar
+  .nav-collapse .nav.pull-right { margin-left: 20px; } .navbar .btn-navbar{
+  margin-right: 20px; } .brand>img{ margin-left: 18px; } .navbar-fixed-top{
+  margin-bottom: -10px; margin-right: 0px; } .links{ text-align: center;
+  } .bef{ margin-left: auto; margin-right: auto; } } @media (max-width: 600px){
+  #top{ background: #ddd9d2; } #pic1{ background: url(img/responsive-web-top.png)
+  center no-repeat ; height: 485px; } #flag{ display: none; } #scroll-down{
+  text-align: center; margin-top: 420px; padding-top: 10px; } h3{ margin-top:
+  -30px; font-size: 16px; text-align: center; } p{ font-size: 12px; } .navbar
+  .nav-collapse .nav.pull-right { margin-left: 20px; } .content1>p{ margin:
+  0px 20px; } #btn{ width: 120px; margin-left: auto; margin-right: auto;
+  } #skill{ display: none; } .span10>p{ margin: 0px 20px; font-size: 12px;
+  } .blog-link>p{ margin: 20px 20px 0px; font-size: 12px; } .mosaic-backdrop>img{
+  margin-left:30px; width: 80%; height: 40% } #portfolio1, #portfolio2, #portfolio3,
+  #portfolio4, #portfolio5, #portfolio6>p{ margin: 0px 20px; } .content2>p{
+  font-size: 14px; margin: 0px 20px 20px; line-height: 24px; } .img-circle{
+  margin-left: 0px; } .details1 h4{ margin-left: 24px; font-size: 14px; }
+  .details1 p{ margin-left: 24px; margin-top: 0px; } .details2{ font-size:
+  12px; margin:10px 20px 0; } #btn1{ margin-top: -30px; margin-left: auto;
+  margin-right: auto; } .intro{ font-size: 13px; margin:15px 20px; } #contact
+  h2{ font-size: 16px; text-align: center; margin-top: 20px; } .links{ margin-left:
+  30px; } .bef{ margin-left: auto; margin-right: auto; } footer{ margin-top:
+  8px; } .top-nav a:hover{ text-decoration: none; -webkit-transform:translateY(0px);
+  -moz-transform:translateY(0px); transform:translateY(0px); } } /*scroll-bar伪类*/
+  ::-webkit-scrollbar{width:10px;} ::-webkit-scrollbar-track{ -webkit-box-shadow:inset
+  0 0 10px rgba(0,0,0,0.8); } ::-webkit-scrollbar-thumb{ -webkit-border-radius:4px;
+  border-radius:4px; background: rgba(0,0,0,0.3); -webkit-box-shadow:inset
+  0 0 06px rgba(0,0,0,0.6); } ::-webkit-scrollbar-thumb:window-inactive{background:
+  0,0,0,.3};
 	</style>
 	
 	<!-- javascript that will initiate jQuery and the LocalScroll plugin -->
@@ -621,467 +174,555 @@
 		});
    	
 	});
-
-   
-    </script>
-	
+  </script>
+  <!--[if IE]> 
+  <link rel="stylesheet" type="text/css" href="css/warning.css">
+  <![endif] -->
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-
+<!--[if IE]> 
+<p>亲，为了更好的体验，本站无法在IE浏览器下正常访问，请使用非IE浏览器，无IE更轻松。为了您和他人的健康请使用符合您高贵身份的浏览器。</p>
+<p>解决办法：1.下载360，猎豹，Chrome，Firefox（火狐）等现代浏览器。2.在现代浏览器中选择极速模式，不要选择兼容模式或者IE模式。你懂的！好吧，如果你还不明白怎么弄，可以发送邮件到job@aijiaohu.com寻求帮助。
+<![endif] -->
 <!--topNav-->
 <div class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container top-nav">
- 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <a type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
       </a>
- 
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#"><img src="img/title2.png"></a>
- 
+      <a class="brand" href="#">
+        <img src="img/title2.png">
+      </a>
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div id="label-links" class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
         <ul class="nav pull-right ">
-                   <li class="active"><a href="#about">About Me</a></li>
-                   <li><a href="#portfolio">Portfolio</a></li>
-                   <li><a href="#photography"> Photography</a></li>
-                   <li><a href="#blog"> Blog</a></li>
-                   <li><a href="#contact"> contact</a></li>
-       </ul>
+          <li class="active">
+            <a href="#about">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#photography">
+              Photography
+            </a>
+          </li>
+          <li>
+            <a href="#blog">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              contact
+            </a>
+          </li>
+        </ul>
       </div>
- 
     </div>
   </div>
 </div>
-
-
-
-
-
-
- <!-- Main hero unit for a primary marketing message or call to action -->
-    <div class="row-fluid" id="top">
-      <div id="pic1">
-        <div class="container">
-          <div id="flag">
-            <img src="img/web-top_banner.jpg">
-          </div>
-           
+<!-- Main hero unit for a primary marketing message or call to action
+-->
+<div class="row-fluid" id="top">
+  <div id="pic1">
+    <div class="container">
+      <div id="flag">
+        <img src="img/web-top_banner.jpg">
       </div>
-      <div id="scroll-down">
-         <h5>Scroll</h5>
-        <img src="img/scroll.gif">
-      </div>
+    </div>
+    <div id="scroll-down">
+      <h5>
+        Scroll
+      </h5>
+      <img src="img/scroll.gif">
+    </div>
   </div>
-  </div>
-
-
-
+</div>
 <div id="about" class="container">
   <!-- Example row of columns -->
-<div class="row-fluid">
-  <div class="title">
-     <img src="img/aboutme.jpg">
- </div>
   <div class="row-fluid">
-      <div class="span3 offset2 content1">
-           <h3>我是郁剑华<br/>热爱前端开发和交互设计<br/>软件工程专业。</h3>
-           <p>人人控和站酷控，有想法和幽默感的行动派，丰富的团队合作经验，着手创立了学校第一个线上设计组织卡乐坊视觉设计。</p>
-           <p>认为交互设计中的理念是方法论，前端开发和设计中的技能是创造优秀产品的手段，两者相辅相成，相互促进。</p>
-            <div class="span4">
-              <a href="aboutme.html"  target="_blank"id="btn" class="button glow button-rounded button-flat-primary">Read More &rarr;</a>
-            </div>        
-     </div>
-      <div class="span7" id="skill">
-        <div id="chartdiv"></div>
-      </div>
+    <div class="title">
+      <img src="img/aboutme.jpg">
     </div>
-</div>
-</div><!-- /container -->
-
-
-    <div id="portfolio" class="container">
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-        <div class="span8 offset2">
-          <div class="title">
-             <img src="img/portfolio.png">
-          </div>
-          <div class="span10 offset1">
-            <p>从我两年多做的一些东西中，选出来一些有趣的东西，也许很多很简单，也有些参考，但是却代表了成长的脚步。在<a target="_blank" href="http://huaban.com/boards/2592746/">花瓣网</a>中还能看到我的别的作品。
-            </p>
-          </div>
-        </div>
-      <div class="row-fluid span11 btm">
-        <div class="span3 offset2">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio1').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/1.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">中国梦，我的梦专题</div>
-                  Web Design, Interaction Design
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="span3">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio2').slideDown(); $('#portfolio1,#portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio2').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/2.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">微视频网站</div>
-                  Web Design, Interaction Design
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="span3">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio3').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/3.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">单色系猜想</div>
-                  Graphic Design，Flat-UI
-              </div>
-            </a>
-          </div>
-        </div>
-       </div>
-
-
-    <div class="row-fluid span11 btm">
-        <div class="span3 offset2">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio4').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/2.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="span3">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio5').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/1.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="span3">
-          <div class="portfolio_pic">
-             <a onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio6').offset().top }, 600);" class="mosaic-overlay">
-             <div class="mosaic-backdrop"><img src="img/portfolio/3.png" alt="Portfolio" /></div>
-              <div class="details">
-                 <div class="headline">Yumo jump</div>
-                  Game design, app design
-              </div>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div> <!-- /container -->
-
-
-
-<!--slideDownHidden-->
     <div class="row-fluid">
-     <div class="span6 offset3">
-      <div id="portfolio1">
-        <img src="img/close.png" onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>中国梦，我的梦</h4>
-    <p>设计思路：蓝天，白云的头部设计使得纵深感加强，同时更好的背景的白色衔接。头部的天空与底部的城市剪影呼应，绸带与中间Banner处绸带呼应，跳动的频率和心脏将中国梦和我的梦连接起来达到了需求方的要求。整体的色彩和间距，使页面显得较为简洁、清新。作为一个专题页面将需要表达的内容尽量直观的展示在用户面前，减少了用户多余的点击。<br/><a href="http://huaban.com/pins/64739208/zoom/"target="_blank">去花瓣看细节</a></p>
-    <img src="img/portfolio/11.jpg"       alt="Portfolio" class="resp1" /><br />
-    <img src="img/portfolio/13.jpg"   alt="Portfolio" class="resp2" /><br />
-    <img src="img/portfolio/11.jpg"   alt="Portfolio" class="resp2" />
+      <div class="span3 offset2 content1">
+        <h3>
+          我是郁剑华
+          <br/>
+          热爱前端开发和交互设计
+          <br/>
+          软件工程专业。
+        </h3>
+        <p>
+          人人控和站酷控，有想法和幽默感的行动派，丰富的团队合作经验，着手创立了学校第一个线上设计组织卡乐坊视觉设计。
+        </p>
+        <p>
+          认为交互设计中的理念是方法论，前端开发和设计中的技能是创造优秀产品的手段，两者相辅相成，相互促进。
+        </p>
+        <div class="span4">
+          <a href="aboutme.html" target="_blank" id="btn" class="button glow button-rounded button-flat-primary">
+            Read More &rarr;
+          </a>
+        </div>
       </div>
-     </div>
-    <div class="span8 offset2">
-      <div id="portfolio2">
-        <img src="img/close.png" onclick="$('#portfolio2').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>大学微视频网站</h4>
-<p>这是我做的这个微视频网站的第三版的部分页面，应领导和工程师要求部分内容参考有些网站。三次改版，每一次改动都让我对网页设计有新的理解，也许这就是成长吧。交互方面的内容不想多说什么，一个细节经常改动十几次。设计者最容易沉浸在自己的想法中忽视了技术可行性，也是因为这个网站，常常跟前端工程师沟通很久，后来索性自己开始学习前端开发，也许有的时候人确实需要一个动力。围绕这个网站的设计，我开始关注交互设计，也开始接触WEB前端，感受到了自己的成长。</p>
-    <img src="img/portfolio/22.png" alt="Portfolio" class="resp1"  /><br />
-    <img src="img/portfolio/23.png" alt="Portfolio" class="resp2" /><br />
-    <img src="img/portfolio/24.png" alt="Portfolio" class="resp2" />
+      <div class="span7" id="skill">
+        <div id="chartdiv">
+        </div>
       </div>
-     </div>
-     <div class="span4 offset4">
-      <div id="portfolio3">
-        <img src="img/close.png" onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>单色系猜想</h4>
-    <p>设计思路：扁平化设计风格，可以让作者能把握物体更本质的东西。我的这些设计追求以最简洁的笔画来描绘事物，纯色系背景更加简洁清新，给用户一定想象的空间，没有明确的边框，让用户可以脑补出最完美的轮廓，增加用户想象时的乐趣。简单明快的表示，可以让所表现的事物尺寸较小的时候不会出现因为损失细节而降低效果。</p>
-    <img src="img/portfolio/imac.png"  alt="Portfolio" class="resp1" /><br />
-    <img src="img/portfolio/ipod-classic.png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/portfolio/camera.png"   alt="Portfolio" class="resp2" /><br />
-    <img src="img/portfolio/radio.png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/portfolio/watch.png"  alt="Portfolio" class="resp2" /><br />
-      </div>
-     </div>
-     <div class="span4 offset4">
-      <div id="portfolio4">
-        <img src="img/close.png" onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/portfolio/41.png"  alt="Portfolio" class="resp1" /><br />
-    <img src="img/portfolio/41.png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (4).png"   alt="Portfolio" class="resp2" />
-      </div>
-     </div>
-     <div class="span4 offset4">
-      <div id="portfolio5">
-        <img src="img/close.png" onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (5).png"  alt="Portfolio" class="resp1" /><br />
-    <img src="img/11 (5).png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (5).png"   alt="Portfolio" class="resp2" />
-      </div>
-     </div>
-     <div class="span4 offset4">
-      <div id="portfolio6">
-        <img src="img/close.png" onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);" class="close-btn" alt="Close" /><br />
-         <h4>作品题目</h4>
-A classic platform game with Yumo in the leading role. Follow Yumo the little forrest creature on his adventures. The game is under development and is coming soon (fingers crossed).
-    <img src="img/11 (2).png"  alt="Portfolio" class="resp1" /><br />
-    <img src="img/11 (2).png"  alt="Portfolio" class="resp2" /><br />
-    <img src="img/11 (2).png"   alt="Portfolio" class="resp2" />
-      </div>
-     </div>
-
-    </div><!--row-fluid-->
- </div><!--portfolio-->
-
-
-<div id="photography">
-  <div class="container-fluid">
-  <div class="row-fluid">
-   <div class="title">
-     <img src="img/photography.jpg">
-   </div>
-    <div class="span5 offset2"id="pho">
-      <div class="carousel slide" id="carousel-792498">
-        <ol class="carousel-indicators">
-          <li data-slide-to="0" data-target="#carousel-792498">
-          </li>
-          <li data-slide-to="1" data-target="#carousel-792498" class="active">
-          </li>
-          <li data-slide-to="2" data-target="#carousel-792498">
-          </li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/22.jpg" /></a>
-          </div>
-          <div class="item">
-            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/33.jpg" /></a>
-          </div>
-          <div class="item">
-            <a title="©AiJiaoHu.com"><img alt="photography" src="img/photo/11.jpg" /></a>
-          </div>
-        </div> <a data-slide="prev" href="#carousel-792498" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-792498" class="right carousel-control">›</a>
-      </div>
-    </div>
-    <div class="span3 content2">
-       <p>我热爱摄影，沉浸于按下快门前的那份冷静，摄影在我眼中并不是一个简单的记录，而是看待美好事物的一个视角，换一个不同的角度，即使没有昂贵的设备，同样可以呈现美好。</p>
     </div>
   </div>
 </div>
-</div>
-
-
-
-
-<div id="blog" class="container">
- <div class="row-fluid">
-
-        <div class="span8 offset2">
-          <div class="title">
-             <img src="img/blog.png">
-          </div>
-          <div class="span10 offset1 blog-link">
-            <p>我习惯每天按照计划来生活，也曾一度习惯通过日记来总结一天的事情。记下有意义的，翻看过去能真切的感受到成长。同时我也会把有关自己从网上学到的东西放在这里，写上自己的心得，这不是一个技术博客，应该会很杂乱吧，不过这不也像生活么？欢迎到&nbsp&nbsp<a target="_blank" href="http://blog.aijiaohu.com/">我的博客</a>&nbsp&nbsp<em>blog.aijiaohu.com</em>来骚扰。
-            </p>
-          </div>
-        </div>
-
-   <div class="featurette span11">
-        <div class="span3 offset2">
-     
-        <img class="img-circle" src="img/blog-1.png" alt="blog" title="浅谈瀑布流造成的用户恐惧心理">
-          <div class="details1">
-              <h4>浅谈瀑布流造成的用户恐惧心理</h4>
+<!-- /container -->
+<div id="portfolio" class="container">
+  <!-- Example row of columns -->
+  <div class="row-fluid">
+    <div class="span8 offset2">
+      <div class="title">
+        <img src="img/portfolio.png">
+      </div>
+      <div class="span10 offset1">
         <p>
-        瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响，从一些用户的角度，看看我的理解...</p>
-          </div>
-          <a href="http://blog.aijiaohu.com/?p=9" id="btn1" class="button button-pill button-flat-highlight" target="_blank">Read More &rarr;</a>
+          从我两年多做的一些东西中，选出来一些有趣的东西，也许很多很简单，也有些参考，但是却代表了成长的脚步。在
+          <a target="_blank" href="http://huaban.com/boards/2592746/">
+            花瓣网
+          </a>
+          中还能看到我的别的作品。
+        </p>
+      </div>
+    </div>
+    <div class="row-fluid span11 btm">
+      <div class="span3 offset2">
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio1').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/1.png" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                中国梦，我的梦专题
+              </div>
+              Web Design, Interaction Design
+            </div>
+          </a>
+        </div>
       </div>
       <div class="span3">
-     
-        <img class="img-circle" src="img/blog-2.png" alt="blog" title="让挑剔的你在意的Loading动画">
-          <div class="details1">
-              <h4>让挑剔的你在意的Loading动画</h4>
-        <p>
-        好的设计是通过设计师不断对细微之处的完善而达到的让用户觉得自然并且被用户认可的行为模式。对于也许不起眼的Loading的动画，我总结了一些Loading动画的类型，以及自己的理解,那么我们不妨从改变一个小小的loading开始...</p>
-          </div>
-         <a href="http://blog.aijiaohu.com/?p=17" id="btn1" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a> 
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio2').slideDown(); $('#portfolio1,#portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio2').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/2.png" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                微视频网站
+              </div>
+              Web Design, Interaction Design
+            </div>
+          </a>
+        </div>
       </div>
-       <div class="span3">
-     
-        <img class="img-circle" src="img/blog-3.png" alt="blog" title="那一夏的青春">
-          <div class="details1">
-              <h4>那一夏的青春</h4>
-        <p>
-        夏夜，华灯，青春站在街边的一角，彷徨在街边华美的橱窗，看着玻璃背后的精美，渴望而又羡慕，挪了挪脚步，不舍而又留恋，迟疑间，还是不经意的迈出了脚步，向未知走去，偶尔会回头望一眼，满目的温暖和回忆，但脚下却愈发...</p>
-          </div>
-          <a href="http://blog.aijiaohu.com/?p=32" id="btn1" class="button button-pill button-flat-highlight"target="_blank">Read More &rarr;</a>
+      <div class="span3">
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio3').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/3.png" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                单色系猜想
+              </div>
+              Graphic Design，Flat-UI
+            </div>
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="row-fluid span11 btm">
+      <div class="span3 offset2">
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio4').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/4.png" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                平面印刷品
+              </div>
+              Graphic Design
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="span3">
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio5').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/5.jpg" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                音乐播放器设计
+              </div>
+              UI Design, Graphic Design
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="span3">
+        <div class="portfolio_pic">
+          <a onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio6').offset().top }, 600);"
+          class="mosaic-overlay">
+            <div class="mosaic-backdrop">
+              <img src="img/portfolio/6.jpg" alt="Portfolio" />
+            </div>
+            <div class="details">
+              <div class="headline">
+                图形及鼠绘
+              </div>
+              Graphic Design, Mouse Drawing
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+    <!--slideDownHidden-->
+    <div class="row-fluid">
+      <div class="span6 offset3">
+        <div id="portfolio1">
+          <img src="img/close.png" onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            中国梦，我的梦
+          </h4>
+          <p>
+            设计思路：蓝天，白云的头部设计使得纵深感加强，同时更好的背景的白色衔接。头部的天空与底部的城市剪影呼应，绸带与中间Banner处绸带呼应，跳动的频率和心脏将中国梦和我的梦连接起来达到了需求方的要求。整体的色彩和间距，使页面显得较为简洁、清新。作为一个专题页面将需要表达的内容尽量直观的展示在用户面前，减少了用户多余的点击。
+            <br/>
+            <a href="http://huaban.com/pins/64739208/zoom/" target="_blank">
+              去花瓣看细节
+            </a>
+          </p>
+          <img src="img/portfolio/11.jpg" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/13.jpg" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+      <div class="span8 offset2">
+        <div id="portfolio2">
+          <img src="img/close.png" onclick="$('#portfolio2').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            大学微视频网站
+          </h4>
+          <p>
+            这是我做的这个微视频网站的第三版的部分页面，应领导和工程师要求部分内容参考有些网站。三次改版，每一次改动都让我对网页设计有新的理解，也许这就是成长吧。交互方面的内容不想多说什么，一个细节经常改动十几次。设计者最容易沉浸在自己的想法中忽视了技术可行性，也是因为这个网站，常常跟前端工程师沟通很久，后来索性自己开始学习前端开发，也许有的时候人确实需要一个动力。围绕这个网站的设计，我开始关注交互设计，也开始接触WEB前端，感受到了自己的成长。
+          </p>
+          <img src="img/portfolio/22.png" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/23.png" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/24.png" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+      <div class="span4 offset4">
+        <div id="portfolio3">
+          <img src="img/close.png" onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            单色系猜想
+          </h4>
+          <p>
+            设计思路：扁平化设计风格，可以让作者能把握物体更本质的东西。我的这些设计追求以最简洁的笔画来描绘事物，纯色系背景更加简洁清新，给用户一定想象的空间，没有明确的边框，让用户可以脑补出最完美的轮廓，增加用户想象时的乐趣。简单明快的表示，可以让所表现的事物尺寸较小的时候不会出现因为损失细节而降低效果。
+          </p>
+          <img src="img/portfolio/imac.png" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/ipod-classic.png" alt="Portfolio" class="resp2"
+          />
+          <br />
+          <img src="img/portfolio/camera.png" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/radio.png" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/watch.png" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+      <div class="span4 offset4">
+        <div id="portfolio4">
+          <img src="img/close.png" onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            印刷品有话说
+          </h4>
+          <p>
+            在我眼中，平面印刷品相比较WEB上的设计可以更张扬个性，限制的条条框框会少很多，选出几个觉得稍微有些个性的东西来，从邀请函到海报到代金券，每一个的背后都有一个故事。
+          </p>
+          <img src="img/portfolio/41.png" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/42.jpg" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/43.png" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+      <div class="span4 offset4">
+        <div id="portfolio5">
+          <img src="img/close.png" onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            音乐播放器设计
+          </h4>
+          <p>
+            设计思路：第一个设计的想法源自美剧‘穹顶之下’，简化了不常用的功能，中间部分是一个透明环状的展示，音乐进度条和音量调节分别改成弧状，方便调节。第二个设计的想法源自推盖手机，黑绿红的搭配算是一种尝试。中间进度条部分像老式的唱片机，更加容易控制进度。在不需要的时候可以收回。
+          </p>
+          <img src="img/portfolio/54.jpg" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/52.jpg" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/53.gif" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+      <div class="span4 offset4">
+        <div id="portfolio6">
+          <img src="img/close.png" onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('.portfolio_pic').offset().top }, 600);"
+          class="close-btn" alt="Close" />
+          <br />
+          <h4>
+            图形及鼠绘
+          </h4>
+          <p>
+            这里都是平时有空的时候做的，少了很多条条框框，绘制的时候会更注重细节，做自己喜欢的东西的感觉很好。
+          </p>
+          <img src="img/portfolio/61.jpg" alt="Portfolio" class="resp1" />
+          <br />
+          <img src="img/portfolio/62.jpg" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/64.png" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/65.png" alt="Portfolio" class="resp2" />
+          <br />
+          <img src="img/portfolio/63.jpg" alt="Portfolio" class="resp2" />
+        </div>
+      </div>
+    </div>
+    <!--row-fluid-->
   </div>
-</div>
-</div>
-
-<div id="contact">
-  <div class="row-fluid">
-  <div class="title">
-    <img src="img/contact.png">
-  </div>
-  <div class="span8 offset2">
-    <p class="details2">&nbsp&nbsp在5月底设计了这个网站的第一版之后，2个月后我又开始着手准备进行第二版的设计,希望在新的一版中能达到更好的交互体验和视觉效果。花了很长的时间去考虑使用什么样的效果以及学习相关的东西。这次改版的契机是因为在第一版之后有个大哥加我QQ，闲聊时他提到了Bootstrap框架，让我很感兴趣。于是考虑在这一版中使用此框架，此期间学到了很多新的东西，也接触到了前端开发的有趣的东西，包括Canvas，WebStorage API,视察滚动，响应式布局等等非常吸引我的地方。</p>
-
-       <p  class="intro">学习之路很漫长，同时我也希望能找到一个合适的公司作为未来事业的起点，<br/>如果对我做的感兴趣欢迎按下方的资料联系我。</p>
-  </div>
-  <div class="span3 offset2">
-     <h2>EMail:&nbsp&nbspjob@aijiaohu.com</h2>
-  </div>
-  <div class="span5 offset1">
-    <div class="links">
-      <a href="http://www.renren.com/334750072" target="_blank"><div id="renren" class="focus" data-toggle="tooltip" title="人人网"><img src="img/renren.png"></div></a>
-      <a href="http://www.zcool.com.cn/u/953616" target="_blank"><div id="zcool" class="focus" data-toggle="tooltip" title="站酷"><img src="img/zcool.png"></div></a>
-      <a href="https://github.com/justinyujianhua" target="_blank"><div id="github" class="focus" data-toggle="tooltip" title="GitHub"><img src="img/github.png"></div></a>
+  <!--portfolio-->
+  <div id="photography">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="title">
+          <img src="img/photography.jpg">
+        </div>
+        <div class="span5 offset2" id="pho">
+          <div class="carousel slide" id="carousel-792498">
+            <ol class="carousel-indicators">
+              <li data-slide-to="0" data-target="#carousel-792498">
+              </li>
+              <li data-slide-to="1" data-target="#carousel-792498" class="active">
+              </li>
+              <li data-slide-to="2" data-target="#carousel-792498">
+              </li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <a title="©AiJiaoHu.com">
+                  <img alt="photography" src="img/photo/22.jpg" />
+                </a>
+              </div>
+              <div class="item">
+                <a title="©AiJiaoHu.com">
+                  <img alt="photography" src="img/photo/33.jpg" />
+                </a>
+              </div>
+              <div class="item">
+                <a title="©AiJiaoHu.com">
+                  <img alt="photography" src="img/photo/11.jpg" />
+                </a>
+              </div>
+            </div>
+            <a data-slide="prev" href="#carousel-792498" class="left carousel-control">
+              ‹
+            </a>
+            <a data-slide="next" href="#carousel-792498" class="right carousel-control">
+              ›
+            </a>
+          </div>
+        </div>
+        <div class="span3 content2">
+          <p>
+            我热爱摄影，沉浸于按下快门前的那份冷静，摄影在我眼中并不是一个简单的记录，而是看待美好事物的一个视角，换一个不同的角度，即使没有昂贵的设备，同样可以呈现美好。
+          </p>
+        </div>
+      </div>
     </div>
   </div>
- </div> 
-   <div class="row-fluid">
-    <div class="span3 offset4">
-      <a href="index1.html" target="_blank"><div class="bef" alt="爱交互网站第一版"></div></a>
-    </div>   
-  </div>   
-</div>
-<footer>
-     <p class="text-center">Designed By Justin Yu </p>
-     <p class="text-center">Copyright &copy; AiJiaoHu.com 2013 All Rights Reserved.晋ICP备13003860号</p>
-</footer>
-
-
- 
-
-
-	
-	<!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-   
-    
-    <script src="js/bootstrap.min.js"></script>
-    <!--scrollUp效果-->
-    <script src="js/jquery.scrollUp.min.js"></script>
+  <div id="blog" class="container">
+    <div class="row-fluid">
+      <div class="span8 offset2">
+        <div class="title">
+          <img src="img/blog.png">
+        </div>
+        <div class="span10 offset1 blog-link">
+          <p>
+            我习惯每天按照计划来生活，也曾一度习惯通过日记来总结一天的事情。记下有意义的，翻看过去能真切的感受到成长。同时我也会把有关自己从网上学到的东西放在这里，写上自己的心得，这不是一个技术博客，应该会很杂乱吧，不过这不也像生活么？欢迎到&nbsp&nbsp
+            <a target="_blank" href="http://blog.aijiaohu.com/">
+              我的博客
+            </a>
+            &nbsp&nbsp
+            <em>
+              blog.aijiaohu.com
+            </em>
+            来骚扰。
+          </p>
+        </div>
+      </div>
+      <div class="featurette span11">
+        <div class="span3 offset2">
+          <img class="img-circle" src="img/blog-1.png" alt="blog" title="浅谈瀑布流造成的用户恐惧心理">
+          <div class="details1">
+            <h4>
+              浅谈瀑布流造成的用户恐惧心理
+            </h4>
+            <p>
+              瀑布流的设计，给了用户一眼扫过的快速浏览就能获得更多信息量的可能。同时避免了用户的点击翻页操作,可以说有一定的优势。但是单纯的瀑布流也会导致一些负面的影响，从一些用户的角度，看看我的理解...
+            </p>
+          </div>
+          <a href="http://blog.aijiaohu.com/?p=9" id="btn1" class="button button-pill button-flat-highlight"
+          target="_blank">
+            Read More &rarr;
+          </a>
+        </div>
+        <div class="span3">
+          <img class="img-circle" src="img/blog-2.png" alt="blog" title="让挑剔的你在意的Loading动画">
+          <div class="details1">
+            <h4>
+              让挑剔的你在意的Loading动画
+            </h4>
+            <p>
+              好的设计是通过设计师不断对细微之处的完善而达到的让用户觉得自然并且被用户认可的行为模式。对于也许不起眼的Loading的动画，我总结了一些Loading动画的类型，以及自己的理解,那么我们不妨从改变一个小小的loading开始...
+            </p>
+          </div>
+          <a href="http://blog.aijiaohu.com/?p=17" id="btn1" class="button button-pill button-flat-highlight"
+          target="_blank">
+            Read More &rarr;
+          </a>
+        </div>
+        <div class="span3">
+          <img class="img-circle" src="img/blog-3.png" alt="blog" title="那一夏的青春">
+          <div class="details1">
+            <h4>
+              那一夏的青春
+            </h4>
+            <p>
+              夏夜，华灯，青春站在街边的一角，彷徨在街边华美的橱窗，看着玻璃背后的精美，渴望而又羡慕，挪了挪脚步，不舍而又留恋，迟疑间，还是不经意的迈出了脚步，向未知走去，偶尔会回头望一眼，满目的温暖和回忆，但脚下却愈发...
+            </p>
+          </div>
+          <a href="http://blog.aijiaohu.com/?p=32" id="btn1" class="button button-pill button-flat-highlight"
+          target="_blank">
+            Read More &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact">
+    <div class="row-fluid">
+      <div class="title">
+        <img src="img/contact.png">
+      </div>
+      <div class="span8 offset2">
+        <p class="details2">
+          &nbsp&nbsp在5月底设计了这个网站的第一版之后，2个月后我又开始着手准备进行第二版的设计,希望在新的一版中能达到更好的交互体验和视觉效果。花了很长的时间去考虑使用什么样的效果以及学习相关的东西。这次改版的契机是因为跟一个qq好友闲聊时他提到了Bootstrap框架，让我很感兴趣。在这一版中使用此框架并且尝试了使用响应式布局，此期间学到了很多新的东西，也接触到了前端开发的有趣的东西，包括Canvas，WebStorage
+          API,视察滚动，响应式布局等等非常吸引我的地方。
+        </p>
+        <p class="intro">
+          学习之路很漫长，同时我也希望能找到一个合适的公司作为未来事业的起点，
+          <br/>
+          如果对我做的感兴趣欢迎按下方的资料联系我。
+        </p>
+      </div>
+      <div class="span3 offset2">
+        <h2>
+          EMail:&nbsp&nbspjob@aijiaohu.com
+        </h2>
+      </div>
+      <div class="span5 offset1">
+        <div class="links">
+          <a href="http://www.renren.com/334750072" target="_blank">
+            <div id="renren" class="focus" data-toggle="tooltip" title="人人网">
+              <img src="img/renren.png">
+            </div>
+          </a>
+          <a href="http://www.zcool.com.cn/u/953616" target="_blank">
+            <div id="zcool" class="focus" data-toggle="tooltip" title="站酷">
+              <img src="img/zcool.png">
+            </div>
+          </a>
+          <a href="https://github.com/justinyujianhua" target="_blank">
+            <div id="github" class="focus" data-toggle="tooltip" title="GitHub">
+              <img src="img/github.png">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span3 offset4">
+        <a href="index1.html" target="_blank">
+          <div class="bef" alt="爱交互网站第一版">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="text-center">
+      Designed By Justin Yu
+    </p>
+    <p class="text-center">
+      Copyright &copy; AiJiaoHu.com 2013 All Rights Reserved.晋ICP备13003860号
+    </p>
+  </footer>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.min.js"></script>
+<!--scrollUp效果-->
+<script src="js/jquery.scrollUp.min.js"></script>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" >
-var jiathis_config={
-  data_track_clickback:true,
-  siteNum:6,
-  sm:"qzone,tsina,weixin,tqq,renren,fav",
-  summary:"",
-  marginTop:100,
-  showClose:true,
-  hideMore:true
-}
+var jiathis_config={data_track_clickback:true,siteNum:6,sm:"qzone,tsina,weixin,tqq,renren,fav",summary:"",marginTop:100,showClose:true,hideMore:true}
 </script>
 <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?uid=1815628&type=left&btn=l3.gif&move=0" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<!--ScrollUp-->
+<script>$(function(){$.scrollUp({scrollName:'scrollUp',topDistance:'300',topSpeed:300,animation:'fade',animationInSpeed:200,animationOutSpeed:200,scrollText:'',activeOverlay:false,})});
 
-
-
-
-    <script>
-      $(function () {
-      $.scrollUp({
-        scrollName: 'scrollUp', // Element ID
-        topDistance: '300', // Distance from top before showing element (px)
-        topSpeed: 300, // Speed back to top (ms)
-        animation: 'fade', // Fade, slide, none
-        animationInSpeed: 200, // Animation in speed (ms)
-        animationOutSpeed: 200, // Animation out speed (ms)
-        scrollText: '', // Text for element
-        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-      });
-    });
-
-
-var chart;
-var legend;
-var chartData = [{
-    skill: "Photoshop",
-    value: 80},
-{
-    skill: "Flash",
-    value: 60},
-{     
-    skill: "Illustrator",
-    value: 30},
-
-{
-    skill: "HTML/HTML5",
-    value: 60},
-{
-    skill: "CSS/CSS3",
-    value: 75},
-{
-    skill: "Bootstrap",
-    value: 50},
-{
-   
-    skill: "其他",
-    value: 20},
-];
-
-AmCharts.ready(function() {
-    // 饼图
-    chart = new AmCharts.AmPieChart();
-    chart.dataProvider = chartData;
-    chart.titleField = "skill";
-    chart.valueField = "value";
-    chart.outlineColor = "";
-    chart.outlineAlpha = 0.8;
-    chart.outlineThickness = 2;
-    // 3D
-    chart.depth3D = 20;
-    chart.angle = 35;
-
-    // 图形写入
-    chart.write("chartdiv");
-});
-
-
-  </script>
-
-
+var chart;var legend;var chartData=[{skill:"Photoshop",value:80},{skill:"Flash",value:60},{skill:"Illustrator",value:30},{skill:"HTML/HTML5",value:60},{skill:"CSS/CSS3",value:75},{skill:"Bootstrap",value:50},{skill:"其他",value:20},];AmCharts.ready(function(){chart=new AmCharts.AmPieChart();chart.dataProvider=chartData;chart.titleField="skill";chart.valueField="value";chart.outlineColor="";chart.outlineAlpha=0.8;chart.outlineThickness=2;chart.depth3D=20;chart.angle=35;chart.write("chartdiv")});
+</script>
 </body>
 </html>
